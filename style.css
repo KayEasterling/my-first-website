@@ -68,9 +68,14 @@ nav ul {
   padding: 0 24px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -82,19 +87,15 @@ nav ul {
   margin-bottom: 0;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-
-@media (max-width: 700px) {
-  main {
-    grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* laptop: 3 columns */
+@media (min-width: 1200px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
