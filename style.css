@@ -99,3 +99,10 @@ img {
     gap: 32px;
   }
 }
+
+aside,
+aside p,
+footer,
+footer p {
+  color: #542719;
+}
