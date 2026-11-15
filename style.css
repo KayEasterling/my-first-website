@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -109,4 +110,55 @@ footer p {
 
 .note {
   color: #542719;
+}
+
+/* Gestalt: proximity groups related content with tighter internal spacing. */
+main > section {
+  margin-bottom: 32px;
+}
+
+main > section > :first-child {
+  margin-top: 0;
+}
+
+main h2,
+main h3 {
+  margin-bottom: 8px;
+}
+
+main p,
+main ul {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+main article {
+  margin-top: 16px;
+}
+
+main article > :first-child {
+  margin-top: 0;
+}
+
+/* Gestalt: similarity gives navigation the same appearance on every page. */
+nav a,
+nav a:visited {
+  display: inline-block;
+  padding: 8px;
+  color: #542719;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: #38261F;
+  background-color: #E9A992;
+}
+
+nav a:focus-visible {
+  outline: 3px solid #38261F;
+  outline-offset: 4px;
 }
