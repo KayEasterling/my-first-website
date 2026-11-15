@@ -1,4 +1,5 @@
 
+
 * {
   box-sizing: border-box;
 }
@@ -159,6 +160,115 @@ nav a:focus-visible {
 }
 
 nav a:focus-visible {
+  outline: 3px solid #38261F;
+  outline-offset: 4px;
+}
+
+/* Contact form: shared palette, grouped controls, and visible error text. */
+#contact-form {
+  max-width: 640px;
+  margin-top: 24px;
+}
+
+#contact-form fieldset {
+  min-width: 0;
+  margin: 0 0 24px;
+  padding: 16px;
+  border: 2px solid #542719;
+}
+
+#contact-form legend,
+#contact-form label {
+  font-weight: 700;
+}
+
+#contact-form legend {
+  padding: 0 8px;
+}
+
+.form-field {
+  margin-bottom: 24px;
+}
+
+fieldset .form-field:last-child {
+  margin-bottom: 0;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  border: 2px solid #542719;
+  border-radius: 8px;
+  background-color: #F8E1B6;
+  color: #38261F;
+  font: inherit;
+}
+
+#contact-form textarea {
+  resize: vertical;
+}
+
+#contact-form .field-hint,
+#contact-form .field-error {
+  margin: 8px 0;
+}
+
+#contact-form .field-error {
+  color: #542719;
+  font-weight: 700;
+}
+
+#contact-form [aria-invalid="true"] {
+  border: 3px solid #542719;
+}
+
+.error-summary {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 3px solid #542719;
+  background-color: #F8E1B6;
+}
+
+.error-summary h3 {
+  margin-top: 0;
+  color: #542719;
+}
+
+#contact-form a,
+#contact-form a:visited {
+  color: #542719;
+  text-decoration: underline;
+}
+
+#contact-form button {
+  min-height: 48px;
+  padding: 8px 24px;
+  border: 2px solid #542719;
+  border-radius: 8px;
+  background-color: #E9A992;
+  color: #38261F;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #F8E1B6;
+}
+
+#contact-form input:focus-visible,
+#contact-form textarea:focus-visible,
+#contact-form button:focus-visible,
+#contact-form a:focus-visible,
+.error-summary:focus {
   outline: 3px solid #38261F;
   outline-offset: 4px;
 }
