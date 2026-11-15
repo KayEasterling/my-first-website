@@ -30,4 +30,6 @@ Checked the stylesheet's text/background color combinations using the WebAIM Con
 | Unvisited navigation links on cream | `#0000EE` | `#F8E1B6` | 7.35:1 | Pass |
 | Visited navigation links on cream | `#551A8B` | `#F8E1B6` | 8.61:1 | Pass |
 
-
+Gestalt Principles
+- Proximity: I used 8px gaps between headings and related text, with 32px spacing after main sections, to group related information and separate different topics.
+- Similarity: I used matching bold, underlined navigation links with the same padding, colors, and interaction styles on every page so visitors can recognize the same controls throughout the site.
